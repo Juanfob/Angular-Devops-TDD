@@ -1,7 +1,7 @@
-function saludar (nombre){
-    console.log('Hola mundo ', nombre);
+function saludar(nombre : string){
+    console.log("Hola mundo, "+ nombre)
 }
 
-var miNombre = 'Juan';
+var miNombre = "Jhonatan"
 
-saludar(miNombre);
+saludar(miNombre)
