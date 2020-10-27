@@ -29,7 +29,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
-      providers:[
+      providers: [
         UserService,
         AppComponent
       ],
@@ -66,7 +66,7 @@ describe('AppComponent', () => {
   });
 
 
-  it('Debe retornar TRUE', ()=>{
+  it('Debe retornar TRUE', () => {
     const respuesta = appComponent.par(44);
     expect(respuesta).toBeTruthy();
   });
@@ -78,7 +78,7 @@ describe('AppComponent', () => {
   });
 
 
-  it('Debe llamar a UserService y el metodo getAll() para obtener los usuarios', ()=>{
+  it('Debe llamar a UserService y el metodo getAll() para obtener los usuarios', () => {
 
     // Mock = Objeto simulado de nuestra respuesta
     let mockUser : User[] = [
